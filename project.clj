@@ -5,5 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [com.taoensso/carmine "2.9.2"]]
-  :main disque-clj.core
+  :main ^:skip-aot disque-clj.core
+  :target-path "target/%s"
+  :profiles {:uberjar {:aot :all}}
+
   )
